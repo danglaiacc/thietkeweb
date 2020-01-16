@@ -1,0 +1,92 @@
+:root{
+  --mauTim: #341a79;
+}
+/*Hệ thống z-index:
+  Welcome (với ảnh nền đen) : -1;
+
+*/
+body{
+  font-family: 'quicksand'; 
+}
+/* Start thanh tìm kiếm */
+.search{
+  position: fixed; /*đặt div search lên đầu trang*/
+  height: 120px;
+  background: var(--mauTim); 
+  left:0;
+  transition-duration: 500ms;
+  -webkit-transition-duration: 500ms;
+  top: -200px;
+}
+.search form{
+  position: relative;
+}
+.search i.far.fa-times-circle{
+  position: absolute;
+  font-size: 1.5rem;
+  top:27%;
+  right: 22px;
+  color: #ffffff73;
+  cursor: pointer;
+}
+.search form input{
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: transparent;
+  height: 50px;
+  color: #fff; 
+  padding: 0 20px;
+  font-size: 18px;
+}
+
+/* End thanh tìm kiếm */
+/* Start navbar*/ 
+.thanhNavbar{
+  position: fixed;
+  height: 120px;
+  padding-top: 2rem; /*Đẩy navbar xuống giữa*/
+  transition-duration: 700ms;
+  -webkit-transition-duration: 700ms;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.navbar a.dropdown-toggle:after{
+  border: none; /*xóa dấu mũi tên mặc định của bootstrap*/
+}
+.navbar a{
+  color:red;
+}
+.navbar-toggler{
+  border: 2px solid #fff;
+  color: white;
+  border-radius: .25rem;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+} 
+
+.navbar .btnSearch{
+  color:black;
+}
+/* End navbar*/
+
+/* Start Welcome */
+.welcome{
+  width: 100%;
+  height: 950px;
+  background: url(../images/index/bgTest.jpg) no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  z-index:-1;
+  color: white;
+}
+.nenden:before{
+  content:'';
+  position: absolute;
+  width: 100%;
+  height:100%;
+  top:0;
+  left:0;
+  z-index:-2;
+  background: rgba(14, 2, 35, 0.5); /*đặt nền đen lên ảnh nền*/ 
+}
+/* End Welcome yellow */
+

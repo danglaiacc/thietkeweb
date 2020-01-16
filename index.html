@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <!-- boostrap 4.4 -->
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  <!-- My css file -->
+  <link rel="stylesheet" href="css/index.css">
+  <!-- Khi hoàn thành nhớ xóa Holder.js script và folder, đem script xuống cuối body -->
+
+  <!-- bootstrap 4.4 -->
+  <script src="bootstrap/jquery-3.4.1.slim.min.js"></script>
+  <script src="bootstrap/popper.min.js"></script>
+  <script src="bootstrap/bootstrap.min.js"></script>
+  <!-- My js file -->
+  <script src="js/index.js"></script>
+
+  <!-- Holder.js -->
+  <!-- example holder.js: <img src="holder.js/400x300" class="card-img-top" alt=""> -->
+  <script src="holder.js/holder.js"></script>
+
+  <!-- link to my Font -->
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap&subset=vietnamese"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Start Thanh tìm kiếm -->
+  <div class="search d-flex align-center w-100">
+    <div class="container my-auto">
+      <div class="row">
+        <div class="col-sm-12">
+          <form action="#">
+            <input type="search" value="" placeholder="Bạn muốn tìm gì?">
+          </form>
+          <i class="far fa-times-circle"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Thanh tìm kiếm -->
+
+
+  <!-- Start Navbar -->
+
+  <header class="thanhNavbar w-100">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-lg bg-none py-auto">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav mr-auto">
+                <!--margin-right: auto để đẩy nút search sang bên phải-->
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown link
+                    <i class="fas fa-angle-down"></i> <!-- icon mũi tên xuống -->
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown link
+                    <i class="fas fa-angle-down"></i> <!-- icon mũi tên xuống -->
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+              </ul>
+              <div class="btnSearch mr-0">
+                <i class="fas fa-search"></i>
+                Search
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End Navbar -->
+
+  <!-- Start Welcome -->
+  <div class="welcome nenden">
+    Màn hình welcome với ảnh nền nè
+  </div>
+  <!-- End Welcome -->
+
+</body>
+
+</html>
